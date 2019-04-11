@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <title>Home Page</title>
+        <!-- Required meta tags -->
+        <meta charset="UTF-8">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!-- Additional styling -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Scripts necessary for bootstrap elements on the page to be functional -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </head>
+    <body style="background:rgb(219, 219, 219)">
+        <!-- Creating the Navbar class - size, background color, font color -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        
+            <!-- Define container for navigation bar -->
+            <div class="container-fluid">
+
+                <!-- Define the navbar header ... apply some simple formatting, add a logo, add alignment -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="latitude.png" width="40" height="40" class="d-inline-block align-top">
+                        <!-- Adding the text here so it's after the picture -->
+                        <span style="font-size:25px">Lattitude</span>
+                    </a>
+                </div>
+
+                <!-- Creating the nav bar toggler for when the page shrinks-->
+                <div class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </div>
+            
+                <!-- Creating the nav bar buttons using a list-->
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav ml-auto">
+                        <!-- Creating nav bar button that is a dropdown -->
+                        <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                        </li>                        
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Plots
+                            </a>
+                            <!-- Dropdown menu bootstrap class -->
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="figmaxtemp.html">Temperature</a>
+                                <a class="dropdown-item" href="fighumidity.html">Humidity</a>
+                                <a class="dropdown-item" href="figcloudiness.html">Cloudiness</a>
+                                <a class="dropdown-item" href="figwindspeed.html">Wind Speed</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comparison.html">Comparison</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="data.html">Data</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Creating seven column box to place the first image and starter text -->
+        <div class="row" style="padding-top:100px; padding-bottom:100px">
+            <div class="col-md-7" style="padding-left:125px">
+                <div class="card">
+                    <div class="card-body">
+                        <h2 class="card-title">Humidity</h2>
+                        <hr class="my-4">
+                        <div class = "box viz_header">
+                            <img src="Fig2.png" class="img-fluid" alt="Max Temp" height ="475" width="700">
+                        <p class="text1">Comparing latitude and humidity, there does not appear to be any sort of discernable trend.  However, there looks to be some clusters of locations where humidity is high consistently (-10 latitide and between 40 and 60 latitude).
+                        </p>
+                    </div> 
+                </div>
+            </div>
+        </div>
+
+        <!-- Creating five column box to place the four different images under "Visualizations" -->
+        <div class="col-md-5" style="padding-right:125px">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Visualizations</h2>
+                    <hr class="my-4">
+                    <div class = "text-center">
+                        <a href="figmaxtemp.html" >
+                            <img src="Fig1.png" class="img-fluid" alt="Max Temp" height ="175" width="225">
+                        </a>
+                        <a href="fighumidity.html" >
+                            <img src="Fig2.png" class="img-fluid" alt="Humidity" height ="175" width="225">
+                        </a>
+                        <a href="figcloudiness.html" >
+                            <img src="Fig3.png" class="img-fluid" alt="Cloudiness" height ="175" width="225">
+                        </a>
+                        <a href="figwindspeed.html" >
+                            <img src="Fig4.png" class="img-fluid" alt="Wind Speed" height ="175" width="225">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+@media (min-width: 992px) {
+
+ }
+
+ body {
+    font-family: Tahoma, Geneva, sans-serif;
+ }
+
+ .card-body h2 {
+     color:rgb(0, 170, 170);
+     font-size:35px;
+     font-weight:bold;
+ }
+
+ .navbar-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(1,165,165)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+  
+.navbar-toggler {
+    border-color: rgb(255,102,203);
+  } 
